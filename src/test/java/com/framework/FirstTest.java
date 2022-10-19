@@ -2,6 +2,7 @@ package com.framework;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,6 +25,8 @@ public class FirstTest {
 
 
         // Act
+        String actualUsername = driver.findElement(By.className("p-nickname")).getText();
+
 
         // Assert
     }
